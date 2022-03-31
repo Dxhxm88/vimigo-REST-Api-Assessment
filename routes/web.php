@@ -30,8 +30,3 @@ Route::get('/dashboard/clients', function (Request $request) {
 })->middleware(['auth'])->name('clients');
 
 require __DIR__ . '/auth.php';
-
-Route::get('/ss', function () {
-    $s = User::where('email', 'daud@test.com')->firstOrFail()->delete();
-    dd($s);
-});
