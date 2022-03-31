@@ -2,23 +2,23 @@
 
 **Requirements**
 
--   You are required to do CRUD functions using User Model (`[POST]/login` & `[POST]/register` is not considered as part of CRUD)
+-   [x] You are required to do CRUD functions using User Model (`[POST]/login` & `[POST]/register` is not considered as part of CRUD)
 
--   The CRUD functions need to be **REST API**
+-   [x] The CRUD functions need to be **REST API**
 
--   Your API can only be accessed if the user is authenticated through **Laravel Passport**
+-   [x] Your API can only be accessed if the user is authenticated through **Laravel Passport**
 
--   All of your inputs need to be validated. You need to use **Laravel Form Request Validation**
+-   [x] All of your inputs need to be validated. You need to use **Laravel Form Request Validation**
 
--   Your `[GET]/api/users` able to filter by name and email, and the response must have pagination.
+-   [x] Your `[GET]/api/users` able to filter by name and email, and the response must have pagination.
 
--   when retrieving the data, only need to show name and email using **Laravel API Resource**.
+-   [x] when retrieving the data, only need to show name and email using **Laravel API Resource**.
 
--   You also need to have an API to import excel/csv files to do bulk Create, Update and Delete users.
+-   [x] You also need to have an API to import excel/csv files to do bulk Create, Update and Delete users.
 
--   The project progress can be tracked using any version-control system (e.g: Upload in GitHub)
+-   [x] The project progress can be tracked using any version-control system (e.g: Upload in GitHub)
 
--   ou MUST save all of the requests and responses as a Postman collection, and include the Postman JSON link in your `README.md`
+-   [x] you MUST save all of the requests and responses as a Postman collection, and include the Postman JSON link in your `README.md`
 
 ## Installation
 
