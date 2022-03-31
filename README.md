@@ -2,7 +2,7 @@
 
 **Requirements**
 
--   [] You are required to do CRUD functions using User Model (`[POST]/login` & `[POST]/register` is not considered as part of CRUD)
+-   [x] You are required to do CRUD functions using User Model (`[POST]/login` & `[POST]/register` is not considered as part of CRUD)
 -   [] The CRUD functions need to be **REST API**
 -   [] Your API can only be accessed if the user is authenticated through **Laravel Passport**
 -   [] All of your inputs need to be validated. You need to use **Laravel Form Request Validation**
