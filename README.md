@@ -38,9 +38,9 @@
 
 | Method   | Resources          | Parameter                                    | Description                                                  | Auth |
 | -------- | ------------------ | -------------------------------------------- | ------------------------------------------------------------ | ---- |
-| `POST`   | `/register`        | name, email, password, password_confirmation | Register a user to login                                     | No   |
-| `POST`   | `/login`           | email, password                              | Login to get personal access token                           | No   |
-| `POST`   | `/logout`          | `null`                                       | Logout a user and revoke personal access token               | Yes  |
+| `POST`   | `api/register`     | name, email, password, password_confirmation | Register a user to login                                     | No   |
+| `POST`   | `api/login`        | email, password                              | Login to get personal access token                           | No   |
+| `POST`   | `api/logout`       | `null`                                       | Logout a user and revoke personal access token               | Yes  |
 | `GET`    | `api/users`        | `null`                                       | Get all users (name, email)                                  | Yes  |
 | `PUT`    | `api/users/{user}` | name, email, password                        | Update a user                                                | Yes  |
 | `DELETE` | `api/users/{user}` | `null`                                       | Delete a user by id                                          | Yes  |
