@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\ImportUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
@@ -93,6 +94,8 @@ class UserController extends Controller
         // If status 1, delete user
         // If status 0, create new or update user based on email (unique)
         Excel::import(new UsersCollectionImport, $request->file('file'));
-        return response()->json("Success", 200);
+        return response()->json([
+            'message' => "Import success"
+        ], 200);
     }
 }

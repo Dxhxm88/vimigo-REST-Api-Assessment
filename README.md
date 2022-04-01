@@ -36,13 +36,13 @@
 
 ## Endpoint
 
-| Method   | Resources          | Parameter                                               | Description                                                  | Auth |
-| -------- | ------------------ | ------------------------------------------------------- | ------------------------------------------------------------ | ---- |
-| `GET`    | `oauth/authorize`  | client_id, redirect_uri, response_type, scope, state    | Register Clients                                             | No   |
-| `POST`   | `oauth/token`      | grant_type,client_id, client_secret, redirect_uri, code | Get access token                                             | No   |
-| `POST`   | `api/users`        | name, email, password                                   | Register a new user                                          | Yes  |
-| `GET`    | `api/users`        |                                                         | Get all users (name, email)                                  | Yes  |
-| `PUT`    | `api/users/{user}` | name, email, password                                   | Update a user                                                | Yes  |
-| `DELETE` | `api/users/{user}` |                                                         | Delete a user by id                                          | Yes  |
-| `GET`    | `api/users/{user}` |                                                         | Get a user by id                                             | Yes  |
-| `POST`   | `api/users/import` | file                                                    | Import excel/csv to do bulk Create, Update, and Delete users | Yes  |
+| Method   | Resources          | Parameter                                    | Description                                                  | Auth |
+| -------- | ------------------ | -------------------------------------------- | ------------------------------------------------------------ | ---- |
+| `POST`   | `/register`        | name, email, password, password_confirmation | Register a user to login                                     | No   |
+| `POST`   | `/login`           | email, password                              | Login to get personal access token                           | No   |
+| `POST`   | `/logout`          | `null`                                       | Logout a user and revoke personal access token               | Yes  |
+| `GET`    | `api/users`        | `null`                                       | Get all users (name, email)                                  | Yes  |
+| `PUT`    | `api/users/{user}` | name, email, password                        | Update a user                                                | Yes  |
+| `DELETE` | `api/users/{user}` | `null`                                       | Delete a user by id                                          | Yes  |
+| `GET`    | `api/users/{user}` | `null`                                       | Get a user by id                                             | Yes  |
+| `POST`   | `api/users/import` | file                                         | Import excel/csv to do bulk Create, Update, and Delete users | Yes  |
