@@ -27,6 +27,7 @@
 -   Run **composer install**
 -   Run **php artisan key:generate**
 -   Run **php artisan migrate --seed**
+-   Run **php artisan passport:client --personal**
 -   Run **php artisan serve**
 -   That's it: launch the main URL
 
