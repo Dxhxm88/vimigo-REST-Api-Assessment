@@ -27,9 +27,9 @@
 -   Run **composer install**
 -   Run **php artisan key:generate**
 -   Run **php artisan migrate --seed**
--   Run **php artisan passport:client --personal**
+-   Run **php artisan passport:client --personal** abd copy the client_id and client_secret to **.env**
 -   Run **php artisan serve**
--   That's it: launch the main URL
+-   Launch the main URL
 
 ## Postman Collection
 
@@ -42,6 +42,7 @@
 | `POST`   | `api/register`     | name, email, password, password_confirmation | Register a user to login                                     | No   |
 | `POST`   | `api/login`        | email, password                              | Login to get personal access token                           | No   |
 | `POST`   | `api/logout`       | `null`                                       | Logout a user and revoke personal access token               | Yes  |
+| `POST`   | `api/users`        | name, email,password                         | Create a users                                               | Yes  |
 | `GET`    | `api/users`        | `null`                                       | Get all users (name, email)                                  | Yes  |
 | `PUT`    | `api/users/{user}` | name, email, password                        | Update a user                                                | Yes  |
 | `DELETE` | `api/users/{user}` | `null`                                       | Delete a user by id                                          | Yes  |
