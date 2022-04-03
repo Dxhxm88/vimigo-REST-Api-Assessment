@@ -22,13 +22,13 @@
 
 ## Installation
 
--   Clone the repository with **git clone** or download zip file
--   Copy **.env.example** file to **.env** and edit database credentials there
--   Run **composer install**
--   Run **php artisan key:generate**
--   Run **php artisan migrate --seed**
--   Run **php artisan passport:client --personal** abd copy the client_id and client_secret to **.env**
--   Run **php artisan serve**
+-   Clone the repository with `git clone` or download zip file
+-   Copy `.env.example` file to `.env` and edit database credentials there
+-   Run `composer install`
+-   Run `php artisan key:generate`
+-   Run `php artisan migrate --seed`
+-   Run `php artisan passport:client --personal` then copy the client_id and client_secret to `.env`
+-   Run `php artisan serve`
 -   Launch the main URL
 
 ## Postman Collection
